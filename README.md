@@ -39,7 +39,7 @@ First, clone the repository to your local machine:
 git clone https://github.com/your-repo/contact-book.git
 cd contact-book
 
-## 2. Setup Frontend (React)
+### 2. Setup Frontend (React)
 
 Step 1: Navigate to the frontend folder  
 Command: cd frontend
@@ -53,7 +53,7 @@ Your frontend will now be running at: http://localhost:3000
 
 ---
 
-## 3. Setup Backend (Node.js + Express)
+### 3. Setup Backend (Node.js + Express)
 
 Step 1: Navigate to the backend folder  
 Command: cd backend
@@ -72,7 +72,7 @@ Your backend will now be running at: http://localhost:5050
 
 ---
 
-## 🛠 How to Test the API Using Postman
+### 🛠 How to Test the API Using Postman
 
 ### 🔐 POST /auth/login  
 URL: http://localhost:5050/auth/login  
@@ -91,14 +91,14 @@ Body:
 ---
 
 ### 📒 GET /contacts  
-URL: http://localhost:5050/contacts  
+URL: http://localhost:5050/other/searchAll
 Method: GET  
 Headers: Authorization: Bearer <JWT_TOKEN>
 
 ---
 
 ### ➕ POST /contacts  
-URL: http://localhost:5050/contacts  
+URL: http://localhost:5050/other/add
 Method: POST  
 Headers: Authorization: Bearer <JWT_TOKEN>  
 Body:
@@ -106,7 +106,7 @@ Body:
 
 ---
 
-## 🔐 Setting Authorization in Postman
+### 🔐 Setting Authorization in Postman
 
 1. Log in via POST /auth/login to get a JWT token.
 2. Use that token in all protected routes.
@@ -117,7 +117,7 @@ Value: Bearer <JWT_TOKEN>
 
 ---
 
-## 🚀 Running in Production
+### 🚀 Running in Production
 
 - Deploy backend: Heroku, Render, or Railway  
 - Deploy frontend: Netlify, Vercel, or GitHub Pages
